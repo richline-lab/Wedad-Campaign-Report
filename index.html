@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="NsCjIdJ8ZunQBvHqDu9uLkr0hQ3fWSzFgqZRwCeGf-o" />
-    <title>تقرير أداء الحملة - مجمع الوداد الطبي</title>
+    <title>تقرير أداء الحملة والمقترحات - مجمع الوداد الطبي</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
@@ -13,7 +13,7 @@
                 extend: {
                     colors: {
                         navy: { 900: '#020617', 800: '#0f172a', 700: '#1e293b' },
-                        brand: { blue: '#38bdf8', gold: '#f59e0b', indigo: '#818cf8', emerald: '#10b981' }
+                        brand: { blue: '#38bdf8', gold: '#f59e0b', indigo: '#818cf8', emerald: '#10b981', rose: '#fb7185' }
                     },
                     fontFamily: { cairo: ['Cairo', 'sans-serif'] },
                     animation: { 'float': 'float 6s ease-in-out infinite', 'pulse-slow': 'pulse 4s infinite' },
@@ -30,6 +30,7 @@
         .section-title::after { content: ''; position: absolute; bottom: -1rem; right: 0; width: 60px; height: 4px; background: linear-gradient(90deg, #38bdf8, transparent); }
         .reveal-on-scroll { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
         .reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+        .gradient-text { background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #38bdf8, #818cf8); }
     </style>
 </head>
 <body>
@@ -37,34 +38,36 @@
     <header class="relative min-h-[70vh] flex flex-col justify-center items-center text-center px-6">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-blue/10 blur-[120px] rounded-full -z-10 animate-pulse-slow"></div>
         <h1 class="text-4xl md:text-6xl font-black text-white mb-4">مجمع الوداد الطبي العام</h1>
-        <p class="text-2xl md:text-3xl font-bold text-brand-blue">تقرير أداء الحملة الإعلانية - يناير 2026</p>
+        <p class="text-2xl md:text-3xl font-bold text-brand-blue">تقرير الأداء والمقترحات الاستراتيجية</p>
         <div class="mt-8 h-1 w-24 bg-brand-blue rounded-full"></div>
     </header>
 
     <main class="container mx-auto px-6 max-w-6xl space-y-32 pb-32">
 
+        <!-- القسم الأول: الملخص العام -->
         <section class="reveal-on-scroll">
             <h2 class="section-title">01. ملخص الأداء العام (Google Ads)</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="glass-card p-8 rounded-3xl text-center">
                     <span class="text-slate-400 text-sm block mb-2">إجمالي مرات الظهور</span>
-                    <div class="text-4xl font-black text-white">110,158</div>
+                    <div class="text-4xl font-black text-white">111,278</div>
                     <p class="text-xs text-brand-blue mt-2">ظهور إعلاني واسع النطاق</p>
                 </div>
                 <div class="glass-card p-8 rounded-3xl text-center border-brand-blue/30">
                     <span class="text-slate-400 text-sm block mb-2">إجمالي النقرات الكلية</span>
-                    <div class="text-4xl font-black text-brand-blue">2,000</div>
+                    <div class="text-4xl font-black text-brand-blue">2,035</div>
                     <p class="text-xs text-slate-300 mt-2">تفاعل شامل مع كافة الروابط</p>
                 </div>
                 <div class="glass-card p-8 rounded-3xl text-center">
                     <span class="text-slate-400 text-sm block mb-2">إجمالي التكلفة</span>
-                    <div class="text-4xl font-black text-white">471.18</div>
+                    <div class="text-4xl font-black text-white">688</div>
                     <p class="text-xs text-brand-gold mt-2">ريال سعودي (كفاءة إنفاق عالية)</p>
                 </div>
             </div>
             <p class="mt-8 text-slate-400 text-center italic">"متوسط التكلفة الإجمالية للنقرة الواحدة يعتبر اقتصادياً جداً مقارنة بالمجال الطبي."</p>
         </section>
 
+        <!-- القسم الثاني: التفاعل والتحويلات -->
         <section class="reveal-on-scroll">
             <h2 class="section-title">02. تحليل التفاعل المباشر والتحويلات</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -84,7 +87,7 @@
                         <span class="text-3xl">📍</span>
                         <div>
                             <h4 class="text-xl font-bold text-white">الوصول الجغرافي</h4>
-                            <p class="text-brand-indigo font-bold">808 نقرة للموقع</p>
+                            <p class="text-brand-indigo font-bold">843 نقرة للموقع</p>
                         </div>
                     </div>
                     <p class="text-sm text-slate-400 leading-relaxed">الهدف الأساسي هو زيادة الوصول الجغرافي للمجمع.</p>
@@ -95,11 +98,12 @@
                 <h4 class="text-lg font-bold text-white mb-4">تفاعل الروابط والعناوين:</h4>
                 <p class="text-slate-400 text-sm">سجلت الحملة <span class="text-white font-bold">1159 نقرة إضافية</span> على العناوين الرئيسية وروابط الأقسام، مما ساهم بفاعلية في تعريف الجمهور بالخدمات الطبية المتاحة وبناء الوعي بالعلامة التجارية.</p>
                 <div class="mt-4 inline-block bg-brand-blue/10 px-4 py-2 rounded-lg text-brand-blue font-bold text-xs">
-                    متوسط سعر نقرة الموقع: 0.44 ريال سعودي فقط
+                    متوسط سعر نقرة الموقع: 0.30 ريال سعودي فقط
                 </div>
             </div>
         </section>
 
+        <!-- القسم الثالث: التحليل الفني -->
         <section class="reveal-on-scroll">
             <h2 class="section-title">03. التحليل الفني والتحسينات</h2>
             <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
@@ -107,6 +111,78 @@
                     <h4 class="text-white font-bold mb-4 flex items-center gap-2"><span>🎯</span> دقة الاستهداف</h4>
                     <p class="text-sm text-slate-400">نسبة النقر (CTR) البالغة 0.92% لإضافة الموقع تشير إلى ظهور الإعلان بكثافة في النطاق الجغرافي الصحيح المحيط بالمجمع.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- القسم الرابع: المقترحات (تمت إضافته) -->
+        <section class="reveal-on-scroll relative">
+            <div class="absolute -right-20 top-0 w-64 h-64 bg-brand-emerald/10 blur-[80px] rounded-full -z-10"></div>
+            
+            <h2 class="section-title">04. المقترحات والخطوات القادمة</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- البطاقة الأولى: تتبع مصدر العملاء -->
+                <div class="glass-card p-8 rounded-[2rem] border-t-4 border-t-brand-gold">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 rounded-2xl bg-brand-gold/20 flex items-center justify-center text-2xl">🏷️</div>
+                        <h3 class="text-xl font-bold text-white">حملة تتبع المصدر (Get Directions)</h3>
+                    </div>
+                    
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        نقترح تنفيذ حملة إعلانية من نوع <span class="text-brand-blue font-bold">Get Directions</span> مع إضافة <span class="text-brand-gold font-bold">كود خصم مخصص</span>، بهدف تتبع مصدر العملاء الجدد القادمين من Google Ads بدقة.
+                    </p>
+                    
+                    <div class="bg-navy-900/50 p-6 rounded-2xl border border-white/5">
+                        <h4 class="text-sm font-bold text-white mb-4 border-b border-white/10 pb-2">الأهداف الاستراتيجية:</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-slate-400">
+                                <span class="text-brand-emerald mt-0.5">✔</span>
+                                <span>قياس عدد العملاء الجدد بدقة عالية.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-400">
+                                <span class="text-brand-emerald mt-0.5">✔</span>
+                                <span>تحليل أداء الحملات بناءً على زيارات فعلية.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-400">
+                                <span class="text-brand-emerald mt-0.5">✔</span>
+                                <span>تحسين توزيع الميزانية واتخاذ قرارات مبنية على البيانات.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- البطاقة الثانية: المقترح الاختياري -->
+                <div class="glass-card p-8 rounded-[2rem] border border-brand-rose/20 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 bg-brand-rose/20 text-brand-rose px-4 py-1 rounded-br-2xl text-xs font-bold">مقترح تجريبي (اختياري)</div>
+                    
+                    <div class="flex items-center gap-3 mb-6 mt-2">
+                        <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-2xl text-white">📸</div>
+                        <h3 class="text-xl font-bold text-white">حملة رسائل Instagram</h3>
+                    </div>
+
+                    <div class="flex items-baseline gap-2 mb-6">
+                        <span class="text-4xl font-black text-white">1,500</span>
+                        <span class="text-sm text-slate-400">ريال سعودي (ميزانية تجريبية)</span>
+                    </div>
+
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">
+                        إطلاق حملة رسائل (Messages Campaign) لاستكشاف قنوات جديدة واستقطاب جمهور مختلف بتكلفة محتملة أقل.
+                    </p>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                            <span class="text-brand-rose text-lg">⚡</span>
+                            <span class="text-sm text-slate-300">اختبار تفاعل الجمهور مع الرسائل المباشرة</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-colors">
+                            <span class="text-brand-rose text-lg">📊</span>
+                            <span class="text-sm text-slate-300">مقارنة الأداء والجودة مع حملة Get Directions</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
     </main>
